@@ -17,7 +17,11 @@
 <div id="msg" class="msg" role="alert" aria-live="polite" hidden></div>
 <button id="retry" type="button" class="btn secondary" hidden>Coba lagi</button>
 </main>
-<script src="/config.js"></script>
+<script>
+window.ENV = {
+    SUPABASE_URL: "https://jdxpykacnsengjfokhlo.supabase.co",
+    SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpkeHB5a2FjbnNlbmdqZm9raGxvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ3MzE4MTAsImV4cCI6MjExMDMwNzgxMH0.U3mI5Ti2CAdEXGwZBHQ0ysryFNtXrim5TzvYVZX-Wmo"
+};</script>
 <script src="/js/app.js"></script>
 </body>
 </html>
