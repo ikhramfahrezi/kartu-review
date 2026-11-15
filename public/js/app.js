@@ -3,7 +3,10 @@
  * anti double-submit, fallback cache saat offline, textContent only (anti XSS), redirect hanya ke Google Review. */
 (() => {
   'use strict';
-  const C = window.APP_CONFIG || {};
+  const C = {
+  SUPABASE_URL: "https://jdxpykacnsengjfokhlo.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpkeHB5a2FjbnNlbmdqZm9raGxvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ3MzE4MTAsImV4cCI6MjExMDMwNzgxMH0.U3mI5Ti2CAdEXGwZBHQ0ysryFNtXrim5TzvYVZX-Wmo"
+};
   const UID_RE = /^[A-Za-z0-9-]{4,32}$/;
   const REVIEW_RE = /^https:\/\/search\.google\.com\/local\/writereview\?placeid=[A-Za-z0-9_-]{10,300}$/;
   const ERR = {
